@@ -15,8 +15,8 @@ const transportEngine = process.env.NODE_ENV === 'test' ?
     port: 465,
     secure: true,
     auth: {
-      user: config.mailer.user,
-      pass: config.mailer.password,
+      user: 'a.e.batischev@gmail.com',
+      pass: 'sqjvurjtdgvnvfbc',
     },
   });
 

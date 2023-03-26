@@ -4,13 +4,13 @@ const connection = require('../libs/connection');
 const orderSchema = new mongoose.Schema({
     user: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'User',
         required: true,
+        ref: 'User',
     },
     product: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'Product',
         required: true,
+        ref: 'Product',
     },
     phone: {
         type: String,
@@ -26,8 +26,8 @@ const orderSchema = new mongoose.Schema({
     },
     address: {
         type: String,
-        required: true
-    }
+        required: true,
+    },
 });
 
 module.exports = connection.model('Order', orderSchema);
